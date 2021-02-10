@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1230px){
+
+  #header .wrap { width: 100%; }
+  #header .wrap .gap { padding: 0 30px; }
+  
+  #main section .wrap { width: 100%; }
+  #main section .wrap .gap { padding: 0 30px; }
+  #main section .wrap .gap .container { width: 100%; }
+  
+  #main #section01 .wrap .gap .container .section01-col01 { width: 800px; }
+  #main #section01 .wrap .gap .container .section01-col02 { width: 270px; }
+  #main #section01 .wrap .gap .container .section01-col02 .link-box .link-list .link-item {
+    width: 133px;
+    height: 133px;
+  }
+  #main #section03 .wrap .gap .container .event-wrap { 
+    position: relative; 
+    width: 100%; 
+    padding-bottom: 27.35042735%; 
+  }
+  #main #section03 .wrap .gap .container .event-wrap .event-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48.71794871%;/*{(1230-60-30)/2}/(1230-60)*/
+    /*height: 320px;*/
+    height: 100%;
+  }
+  #main #section03 .wrap .gap .container .event-wrap .event-box02 { left: 51.28358966%; } /*width + margin-right*/
+  /*#main #section03 .wrap .gap .container .event-wrap .event-box01 { margin-right: 2.56410256%;}*//*30px/(1230px-60)*/
+  #main #section03 .wrap .gap .container .event-wrap .event-box .event-link { position: relative; padding: 0; }
+  #main #section03 .wrap .gap .container .event-wrap .event-box .event-link .event-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5.78947368% 5.26315789%;/*33px/570 30px/570*/
+    width: 100%;
+    height: 50%;
+    font-size: 3.85964912%;/*22px/570*/
+    line-height: 60px;
+    text-align: left;
+    color: #fff;
+  }
+  #main #section03 .wrap .gap .container .event-wrap .event-box .event-link .event-text p { font-size: 18px; }
+  /*-----footer-----*/
+  #footer .wrap { width: 100%; }
+  #footer .wrap .gap { padding: 0 30px; }
+}
+
+@media screen and (max-width: 980px) {
+  
+  /*-----header-----*/
+  #header { height: 53px; }
+  #header .wrap .gap { padding: 6px 20px 7px; }
+  #header .wrap .gap .container { line-height: 35px; }
+  #header .wrap .gap .container .logo-wrap { height: 100%;}
+  
+  /*-----main-----*/
+  #main,
+  #main section { 
+    padding-bottom: 40px; 
+  }
+  #main section .wrap .gap { padding: 0 20px; }
+  #main #section01 { 
+    margin-top: 53px;/*header height*/
+    padding-top : 16px; 
+  }
+  #main #section02 { padding-top: 40px; }
+  #main #section03,
+  #main #section04 { padding-top: 43px; }
+  
+  #footer .wrap .gap { padding: 32px 20px; }
+  
+}
+
+@media screen and (max-width: 780px) {
+  #main #section03 .wrap .gap .container .event-wrap {
+    position: relative;
+    width: 100%; 
+    padding-bottom: 125.67567567%;/*930px/(780-40)*/
+  }
+  #main #section03 .wrap .gap .container .event-wrap .event-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 49.49536559%;/*460px/930*/
+  }
+  #main #section03 .wrap .gap .container .event-wrap .event-box02 { top: 50.53763440%; }
+  #main #section03 .wrap .gap .container .event-wrap .event-box .event-link .event-text {
+    top: 0;
+    padding: 17px 15px;
+    height: auto;
+    font-size: 17px;
+    line-height: 32px;
+  }
+  #main #section03 .wrap .gap .container .event-wrap .event-box .event-link .event-text p { font-size: 13px; }
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+  
+}
+
+@media screen and (max-width: 350px) {
+  
+}
