@@ -164,6 +164,7 @@
       var $mobileBtnWrap = $('.mobile-cultureBtn-wrap');
       var $mobileBtn = $('.mobile-cultureBtn');
       var $mobileCulture = $('.mobile-culture');
+      var $mobileCultureRows = $('.mobile-culture-rows ');
       var $closeBtn = $('.closeBtn-wrap');
       var isSlideUp = false;
 
@@ -239,11 +240,19 @@
         $mobileBtn.click(function(event){
           event.preventDefault();
           $mobileCulture.removeClass('hide');
+          $mobileCultureRows.animate({
+            top: 0
+          },500, 'swing');
           isSlideUp = true;
         });
         $closeBtn.click(function(event){
           event.preventDefault();
-          $mobileCulture.addClass('hide');
+          $mobileCultureRows.animate({
+            top: '100%'
+          },200);
+          setTimeout(function(){
+            $mobileCulture.addClass('hide');
+          },200);
           isSlideUp = false;
         });
       };
