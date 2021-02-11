@@ -9,11 +9,11 @@
   #main section .wrap .gap { padding: 0 30px; }
   #main section .wrap .gap .container { width: 100%; }
   
-  #main #section01 .wrap .gap .container .section01-col01 { width: 800px; }
-  #main #section01 .wrap .gap .container .section01-col02 { width: 270px; }
-  #main #section01 .wrap .gap .container .section01-col02 .link-box .link-list .link-item {
-    width: 133px;
-    height: 133px;
+  #main #section01 .wrap .gap .container .section01-col01 { width: 65.04650465%; }/*800px/1230*/
+  #main #section01 .wrap .gap .container .culture { width: 21.95129512%; }/*270/1230px*/
+  #main #section01 .wrap .gap .container .culture .link-box .link-list .link-item {
+    width: 100%;
+    height: 75px;
   }
   #main #section03 .wrap .gap .container .event-wrap { 
     position: relative; 
@@ -63,10 +63,13 @@
     padding-bottom: 40px; 
   }
   #main section .wrap .gap { padding: 0 20px; }
+
+
   #main #section01 { 
     margin-top: 53px;/*header height*/
     padding-top : 16px; 
   }
+
   #main #section02 { padding-top: 40px; }
   #main #section03,
   #main #section04 { padding-top: 43px; }
