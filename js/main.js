@@ -44,6 +44,7 @@
         }
         handleGnbMenu();
         setMobileMenu();
+        setSearchArea();
         resizeHeaderEvent();
       };
 
@@ -122,6 +123,20 @@
         $mobileMenu.css({height: $windowHeight});
       };
 
+      var setSearchArea = function(){
+        var $searchBtn = $('.search-btn ');
+        var $closeBtn = $('.search-closeBtn');
+        var $searchArea = $('.search-area');
+        $searchBtn.click(function(event){
+          event.preventDefault();
+          $searchArea.removeClass('hide');
+        });
+        $closeBtn.click(function(event){
+          event.preventDefault();
+          $searchArea.addClass('hide');
+        })
+      };
+
       /*window resize*/
       var resizeHeaderEvent = function(){
         $window.resize(function(){
@@ -164,11 +179,11 @@
       var $mobileBtnWrap = $('.mobile-cultureBtn-wrap');
       var $mobileBtn = $('.mobile-cultureBtn');
       var $mobileCulture = $('.mobile-culture');
-      var $mobileCultureRows = $('.mobile-culture-rows ');
+      var $mobileCultureRows = $('.mobile-culture-rows');
       var $closeBtn = $('.closeBtn-wrap');
       var isSlideUp = false;
 
-      var $linkItem = $('.link-item');
+      var $linkItem = $('.link-list .link-item');
       var hoveredImg = null;
       var hoveredBg='';
       var bg_y = '-72px'; 
@@ -191,16 +206,16 @@
           $(this).hover(
             function(event){
               event.preventDefault();
-              $(this).css({'transform':'scale(1.02)', 'background':'#000', 'box-shadow':'0 0 2px #000'});
               hoveredImg = $(this).find('.link-img');
               hoveredBg = hoveredImg.css('background-position');
               newPos = hoveredBg.substring(0, hoveredBg.length-3) + bg_y;
-              hoveredImg.css('background-position', newPos); 
+              hoveredImg.css('background-position', newPos);
+              $(this).css({'transform':'scale(1.02)', 'background':'#000', 'box-shadow':'0 0 2px #000'});
             },
             function(event){
               event.preventDefault();
-              $(this).css({'transform':'scale(1.0)', 'background':'#f8f8f8', 'box-shadow':'0 0 2px #f8f8f8'});
               hoveredImg.css('background-position', hoveredBg);
+              $(this).css({'transform':'scale(1.0)', 'background':'#f8f8f8', 'box-shadow':'0 0 2px #f8f8f8'});
               hoveredImg = null;
               hoveredBg = '';
             },
