@@ -11,9 +11,14 @@
       this.sectionNotice();
       this.sectionApps();
       this.footer();
+      this.scrollEvent();
+    },
+    scrollEvent: function(){
+      var $window = $(window);
+
+
     },
     header: function(){
-
       var $window = $(window);
       var $windowWidth = $window.innerWidth();
       var $windowHeight = $window.innerHeight();
@@ -25,6 +30,7 @@
       var $mobileBtn = $('.mobile-menu-btn');
 
       var $header = $('#header');
+      var $headerHeight = $header.height();
       var $gnb = $('.gnb');
       var $gnbItem = $('.gnb-item a');
       var $gnbBar = $('.gnb-bar');
@@ -42,7 +48,7 @@
           setMobileMenuArea();
         }else{/*PC*/
           handleGnbBar();
-          handleScrollEvent(isMobile);
+          scrollEvent(isMobile);
         }
         handleGnbMenu();
         setMobileMenu();
@@ -139,23 +145,26 @@
         })
       };
 
-      // var hideBorderEvent = function(){
-      //     if($window.scrollTop()>120){
-      //     $header.addClass('scroll-border');
-      //   }
-      //   else $header.removeClass('scroll-border');
-      // }
+      var hideBorderEvent = function(isTop){
+        if(isTop) $header.removeClass('scroll-border');
+        else $header.addClass('scroll-border');
+      }
 
-      var scrollBorderEvent = function(isMobile){
+      var scrollEvent = function(isMobile){
         if(isMobile){
-          $window.on('scroll.culture',function(event){
-            event.preventDefault();
-            hideTop = $('footer').offset().top - $windowHeight;
-            if($(this).scrollTop()>hideTop) $mobileBtnWrap.addClass('hide');
-            else $mobileBtnWrap.removeClass('hide');
-          });
+          console.log($window.scrollTop());
+          $window.off('scroll.header');
+          hideBorderEvent(true);
         }else{
-          $window.off('scroll.culture');
+          $window.on('scroll.header',function(event){
+            event.preventDefault();
+            console.log($window.scrollTop());
+            if($window.scrollTop()>$headerHeight){
+              hideBorderEvent(false);
+            }else{
+              hideBorderEvent(true);
+            }
+          });
         }
       };
 
@@ -171,16 +180,15 @@
               setMobileGnb(isMobile);
             }else{
               handleGnbBar();
-              scrollBorderEvent(isMobile);
             }
           }else{
             if(!isMobile){
               isMobile = true;
-              setMobileGnb(isMobile);
-              handleScrollEvent(isMobile);
+              setMobileGnb(isMobile); 
             }
             setMobileMenuArea();
           }
+          scrollEvent(isMobile);
         })
       };
 
