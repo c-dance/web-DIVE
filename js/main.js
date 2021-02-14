@@ -26,14 +26,9 @@
       var $header = $('#header');
       var $headerHeight = $header.height();
       var $gnb = $('.gnb');
-      var $gnbItem = $('.gnb-item a');
       var $gnbBar = $('.gnb-bar');
-      var $gnbMenuItems = $('#gnb-item-space, #gnb-item-culture');
-
-      var $target;
       var gnbArea = {start_x: 0, end_x: 0, start_y: 0, end_y: 0};
-      var gnbBarCss = {start_x: 0, width: 0};
-
+      
       var initHeaderEvent = function(){
         if($windowWidth<980){/*mobile*/
           isMobile = true;
@@ -53,6 +48,7 @@
 
       /*handle depth menu */
       var handleGnbMenu = function(){
+        var $gnbMenuItems = $('#gnb-item-space, #gnb-item-culture');
         $gnbMenuItems.each(function(){
           $(this).hover(function(){
             $(this).next().removeClass('hide');
@@ -65,6 +61,10 @@
       /*handel shifting gnb-bar */
       var handleGnbBar = function(){
         resetGnbBar();
+        var $gnbItem = $('.gnb-item a');
+        var $target;
+        var gnbBarCss = {start_x: 0, width: 0};
+
         $gnbItem.on({
           mouseenter: function(event){
             event.preventDefault();
@@ -149,6 +149,29 @@
           $mSearchArea.addClass('hide');
         });
 
+        setSearchEvent();
+
+      };
+
+      var setSearchEvent = function(){
+        var $searchInput = $('.search-input');
+        var $cleanBtn = $('.search-cleanBtn');
+
+        $searchInput.focus(function(event){
+          event.preventDefault();
+          $(this).next().addClass('clean');
+        });
+
+        $searchInput.blur(function(event){
+          event.preventDefault();
+          $cleanBtn.removeClass('clean');
+          $(this).val('');
+        });
+
+        $cleanBtn.click(function(event){
+          event.preventDefault();
+          $(this).prev().val('');
+        });
       };
 
       var setMobileSearchArea = function(){
@@ -233,7 +256,6 @@
       };
 
       initHeaderEvent();
-
 
     },
     section01: function(){
