@@ -4,7 +4,35 @@
 
   #header .wrap { width: 100%; }
   #header .wrap .gap { padding: 0 30px; }
-  
+
+  #header .wrap .gap .container .search-area .search-rows .search-row02 {
+    position: relative;
+    width: 100%;
+    height: 46.2068%;/*335px/725*/
+    background-color: #fff;
+  }
+  #header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents { padding: 0 20px; }
+  #header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-col {
+    padding: 4.6218% 0 5.2100%;/*1190px*/
+    width: 50%;
+  }
+  #header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-tags { padding-right: 4.2016%; }
+  #header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-tags .tag {
+    margin-right: 2.2218%;/*12px/(595-50)*/
+    padding: 0.7339% 2.7552%;
+    font-size: 14px;
+    line-height: 200%;
+  }
+  #header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-event li {
+    width: 48.7394%;/*300px/(1190/2)*/
+    height: 71.4893%
+  }
+  #header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-event li a p { 
+    font-size: 17px;
+    line-height: 160%;
+    white-space: normal;
+  }
+
   #main section .wrap { width: 100%; }
   #main section .wrap .gap { padding: 0 30px; }
   #main section .wrap .gap .container { width: 100%; }

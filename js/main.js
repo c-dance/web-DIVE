@@ -11,19 +11,13 @@
       this.sectionNotice();
       this.sectionApps();
       this.footer();
-      this.scrollEvent();
-    },
-    scrollEvent: function(){
-      var $window = $(window);
-
-
     },
     header: function(){
       var $window = $(window);
       var $windowWidth = $window.innerWidth();
       var $windowHeight = $window.innerHeight();
 
-      var isMobile = false;
+      var isMobile = false;/*max-width:980*/
       var isOpenMenu = false;
       var $mobileMenu = $('.mobile-gnb-menu')
       var $mobileTrigger = $('.mobile-trigger-wrap');
@@ -39,20 +33,21 @@
       var $target;
       var gnbArea = {start_x: 0, end_x: 0, start_y: 0, end_y: 0};
       var gnbBarCss = {start_x: 0, width: 0};
-      
 
       var initHeaderEvent = function(){
         if($windowWidth<980){/*mobile*/
           isMobile = true;
-          setMobileGnb(isMobile);
+          setMobileGnb();
           setMobileMenuArea();
         }else{/*PC*/
           handleGnbBar();
-          scrollEvent(isMobile);
+          scrollEvent();
         }
         handleGnbMenu();
         setMobileMenu();
         setSearchArea();
+        setSearchTag();
+        setMobileSearchArea();
         resizeHeaderEvent();
       };
 
@@ -101,7 +96,7 @@
         $gnbBar.addClass('hide');
       };
 
-      var setMobileGnb = function(isMobile){
+      var setMobileGnb = function(){
         if(isMobile){
           $gnb.css('display', 'none');/*gnb hide */
           $mobileTrigger.css('display', 'inline-block');/*mobile gnb(trigger, menu) inline-block */
@@ -132,33 +127,78 @@
       };
 
       var setSearchArea = function(){
-        var $searchBtn = $('.search-btn ');
-        var $closeBtn = $('.search-closeBtn');
+        var $searchBtn = $('.search-btn');
         var $searchArea = $('.search-area');
+        var $mSearchArea = $('.m-search-area');
+        var $closeBtn = $('.search-closeBtn');
+        var $mCloseBtn = $('.m-search-closeBtn');
+        
         $searchBtn.click(function(event){
           event.preventDefault();
-          $searchArea.removeClass('hide');
+          if(isMobile) $mSearchArea.removeClass('hide');
+          else $searchArea.removeClass('hide');
         });
+
         $closeBtn.click(function(event){
           event.preventDefault();
           $searchArea.addClass('hide');
-        })
+        });
+
+        $mCloseBtn.click(function(event){
+          event.preventDefault();
+          $mSearchArea.addClass('hide');
+        });
+
       };
+
+      var setMobileSearchArea = function(){
+        var $searchLinks = $('.m-search-row02 a');
+        var $searchTabs = $('.m-search-row03 ul');
+
+        $searchLinks.eq(0).addClass('selected');
+        $searchTabs.eq(0).addClass('selected');
+
+        $searchLinks.each(function(idx){
+          $(this).click(function(event){
+            event.preventDefault();
+            $searchLinks.removeClass('selected');
+            $searchTabs.removeClass('selected');
+            $searchLinks.eq(idx).addClass('selected');
+            $searchTabs.eq(idx).addClass('selected');
+          });
+        });
+      };
+
+      var setSearchTag = function(){
+        var $searchTags = $('.search-tags');
+        var tagData = ['오버 더 레코드', '바이닐앤플라스틱', '래플', '제주', '성수', '부산', '애플뮤직', '쿠킹 라이브러리', '카더가든', '팬메이프로젝트'];
+        var tagTxt = '';
+        var htmlTxt = '';
+        var parentTag = null;
+
+        $searchTags.each(function(){
+          parentTag = $(this);
+          tagData.forEach(function(el){
+            tagTxt = el;
+            htmlTxt = `<li class="tag"><a href="javascript:void(0)" alt="tag">${tagTxt}</a></li>`;
+            parentTag.append(htmlTxt);
+          }); 
+        });
+      };
+
 
       var hideBorderEvent = function(isTop){
         if(isTop) $header.removeClass('scroll-border');
         else $header.addClass('scroll-border');
       }
 
-      var scrollEvent = function(isMobile){
+      var scrollEvent = function(){
         if(isMobile){
-          console.log($window.scrollTop());
           $window.off('scroll.header');
           hideBorderEvent(true);
         }else{
           $window.on('scroll.header',function(event){
             event.preventDefault();
-            console.log($window.scrollTop());
             if($window.scrollTop()>$headerHeight){
               hideBorderEvent(false);
             }else{
@@ -177,18 +217,18 @@
           if($windowWidth>=980){
             if(isMobile){
               isMobile = false;
-              setMobileGnb(isMobile);
+              setMobileGnb();
             }else{
               handleGnbBar();
             }
           }else{
             if(!isMobile){
               isMobile = true;
-              setMobileGnb(isMobile); 
+              setMobileGnb(); 
             }
             setMobileMenuArea();
           }
-          scrollEvent(isMobile);
+          scrollEvent();
         })
       };
 
