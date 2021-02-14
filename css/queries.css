@@ -107,7 +107,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  
+  #header .wrap .gap .container .mobile-gnb-menu .mobile-menu-btn { right: -18px;/*-40px+22px*/ }
+  #header .wrap .gap .container .mobile-gnb-menu .mobile-menu-btn .mobile-btn-bar { background-color: #000; }
 }
 
 @media screen and (max-width: 350px) {

@@ -24,6 +24,7 @@
       var $mobileTrigger = $('.mobile-trigger-wrap');
       var $mobileBtn = $('.mobile-menu-btn');
 
+      var $header = $('#header');
       var $gnb = $('.gnb');
       var $gnbItem = $('.gnb-item a');
       var $gnbBar = $('.gnb-bar');
@@ -41,6 +42,7 @@
           setMobileMenuArea();
         }else{/*PC*/
           handleGnbBar();
+          handleScrollEvent(isMobile);
         }
         handleGnbMenu();
         setMobileMenu();
@@ -137,6 +139,27 @@
         })
       };
 
+      // var hideBorderEvent = function(){
+      //     if($window.scrollTop()>120){
+      //     $header.addClass('scroll-border');
+      //   }
+      //   else $header.removeClass('scroll-border');
+      // }
+
+      var scrollBorderEvent = function(isMobile){
+        if(isMobile){
+          $window.on('scroll.culture',function(event){
+            event.preventDefault();
+            hideTop = $('footer').offset().top - $windowHeight;
+            if($(this).scrollTop()>hideTop) $mobileBtnWrap.addClass('hide');
+            else $mobileBtnWrap.removeClass('hide');
+          });
+        }else{
+          $window.off('scroll.culture');
+        }
+      };
+
+
       /*window resize*/
       var resizeHeaderEvent = function(){
         $window.resize(function(){
@@ -148,11 +171,13 @@
               setMobileGnb(isMobile);
             }else{
               handleGnbBar();
+              scrollBorderEvent(isMobile);
             }
           }else{
             if(!isMobile){
               isMobile = true;
               setMobileGnb(isMobile);
+              handleScrollEvent(isMobile);
             }
             setMobileMenuArea();
           }
@@ -272,20 +297,33 @@
         });
       };
 
+      // var scrollHideEvent = function(isMobile){
+      //   var hideTop = 0;
+      //   if(isMobile){
+      //     $window.scroll(function(event){
+      //       event.preventDefault();
+      //       hideTop = $('footer').offset().top - $windowHeight;
+      //       if($(this).scrollTop()>hideTop) $mobileBtnWrap.addClass('hide');
+      //       else $mobileBtnWrap.removeClass('hide');
+      //     });
+      //   }else{
+      //     $window.off('scroll');
+      //   }
+      // };
+
       var scrollHideEvent = function(isMobile){
         var hideTop = 0;
         if(isMobile){
-          $window.scroll(function(event){
+          $window.on('scroll.culture',function(event){
             event.preventDefault();
             hideTop = $('footer').offset().top - $windowHeight;
             if($(this).scrollTop()>hideTop) $mobileBtnWrap.addClass('hide');
             else $mobileBtnWrap.removeClass('hide');
           });
         }else{
-          $window.off('scroll');
+          $window.off('scroll.culture');
         }
       };
-
       
       initSectionCulture();
     },
