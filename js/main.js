@@ -26,8 +26,6 @@
       var $header = $('#header');
       var $headerHeight = $header.height();
       var $gnb = $('.gnb');
-      var $gnbBar = $('.gnb-bar');
-      var gnbArea = {start_x: 0, end_x: 0, start_y: 0, end_y: 0};
       
       var initHeaderEvent = function(){
         if($windowWidth<980){/*mobile*/
@@ -60,16 +58,18 @@
 
       /*handel shifting gnb-bar */
       var handleGnbBar = function(){
-        resetGnbBar();
         var $gnbItem = $('.gnb-item a');
+        var $gnbBar = $('.gnb-bar');
         var $target;
         var gnbBarCss = {start_x: 0, width: 0};
+
+        $gnbBar.addClass('hide');
 
         $gnbItem.on({
           mouseenter: function(event){
             event.preventDefault();
             $target = $(event.target);
-            gnbBarCss.start_x = $target.offset().left-gnbArea.start_x;
+            gnbBarCss.start_x = $target.offset().left;//+gnbArea_x;
             gnbBarCss.width = $target.css('width');
             $gnbBar.css({width: gnbBarCss.width, left: gnbBarCss.start_x});
             $gnbBar.removeClass('hide');
@@ -83,17 +83,6 @@
             gnbBarCss.width = 0;
           }
         })
-      };
-
-      var resetGnbBar = function(){
-        var $gnbOffset = $gnb.offset();
-        gnbArea.start_y = (Number($gnbOffset.top));
-        gnbArea.start_x = (Number($gnbOffset.left));
-        gnbArea.end_y = (Number($gnbOffset.top)+Number($gnb.innerHeight()));
-        gnbArea.end_x = (Number($gnbOffset.left)+Number($gnb.innerWidth()));
-        isTarget = false;
-        targetArea = [];
-        $gnbBar.addClass('hide');
       };
 
       var setMobileGnb = function(){

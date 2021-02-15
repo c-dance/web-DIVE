@@ -67,9 +67,9 @@
   font-size: 20px; 
 }
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-bar {
-  position: relative;
+  position: absolute;
   top: 93%;
-  left: 0;
+  left: -100px;
   width: 90px;/*javascript*/
   height: 6px;
   background-color: #000;
