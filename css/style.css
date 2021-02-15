@@ -63,12 +63,27 @@
 }
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item:nth-child(4) { margin: 0; }
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item a { 
-  display: block;
+  position: relative;
+  display: inline-block;
   font-size: 20px; 
 }
+#header .wrap .gap .container .gnb .gnb-wrap .gnb-item #gnb-item-space::after, 
+#header .wrap .gap .container .gnb .gnb-wrap .gnb-item #gnb-item-culture::after { 
+  display: inline-block;
+  content: '';
+  width: 24px;
+  height: 22px;
+  background: url(../img/main/common_sprites.svg) no-repeat;
+  background-position: -343px -216px;
+}
+#header .wrap .gap .container .gnb .gnb-wrap .gnb-item #gnb-item-space:hover::after, 
+#header .wrap .gap .container .gnb .gnb-wrap .gnb-item #gnb-item-culture:hover::after {
+  background: url(../img/main/common_sprites.svg) no-repeat;
+  background-position: -343px -268px;
+} 
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-bar {
   position: absolute;
-  top: 93%;
+  top: 94%;
   left: -100px;
   width: 90px;/*javascript*/
   height: 6px;
@@ -86,10 +101,11 @@
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item .gnb-menu-wrap .gnb-menu {
   width: 100%;
   height: auto;
-  background: #000;
+  background: #222;
   text-align: center;
 }
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item .gnb-menu-wrap .gnb-menu a {
+  display: block;
   font-size: 16px;
   line-height: 300%;
   color: #fff;

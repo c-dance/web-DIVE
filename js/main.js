@@ -50,8 +50,10 @@
         $gnbMenuItems.each(function(){
           $(this).hover(function(){
             $(this).next().removeClass('hide');
+            $(this).find('i').css('background-position', '-343px -272px');
           },function(){
             $(this).next().addClass('hide');
+            $(this).find('i').css('background-position', '-343px -220px');
           });
         })
       };
