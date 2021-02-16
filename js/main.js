@@ -46,21 +46,22 @@
 
       /*handle depth menu */
       var handleGnbMenu = function(){
-        var $gnbMenuItems = $('#gnb-item-space, #gnb-item-culture');
-        $gnbMenuItems.each(function(){
-          $(this).hover(function(){
+        var $depthItem = $('.gnb-depth-item');
+
+        $depthItem.each(function(){
+          $(this).hover(function(e){
+            e.preventDefault();
             $(this).next().removeClass('hide');
-            $(this).find('i').css('background-position', '-343px -272px');
-          },function(){
+          }, function(e){
+            e.preventDefault();
             $(this).next().addClass('hide');
-            $(this).find('i').css('background-position', '-343px -220px');
-          });
+          })
         })
       };
 
       /*handel shifting gnb-bar */
       var handleGnbBar = function(){
-        var $gnbItem = $('.gnb-item a');
+        var $gnbItem = $('.gnb-item > a');
         var $gnbBar = $('.gnb-bar');
         var $target;
         var gnbBarCss = {start_x: 0, width: 0};

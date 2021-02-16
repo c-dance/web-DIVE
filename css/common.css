@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
-* {margin:0;padding:0;border:0;vertical-align:middle;}/*추가:box-sizing*/
+@font-face {
+    src: url(../fonts/YouandiModernTR.eot);
+    src: url(../fonts/YouandiModernTR.woff);
+    src: url(../fonts/YouandiModernTR.ttf);
+    font-family: "YouandiModern";
+  }
+
+* {margin:0;padding:0;border:0;vertical-align:middle;box-sizing: border-box;}/*추가:box-sizing*/
 html, body {width:100%;height:100%;}/*추가:background*/
 html {overflow-y:scroll;}/*기본폰트16px*/
 html.addScroll {overflow:hidden;}
