@@ -397,6 +397,51 @@
     },
     sectionNotice: function(){
 
+      var initSectionNotice = function(){
+        setMobileAcc();
+      };  
+
+      var setMobileAcc = function(){
+
+        var $accItem = $('.m-notice-acc a');
+        var activAcc = 'activ-acc';
+
+        $accItem.on('click', function(e){
+          e.preventDefault();
+          if($(this).attr('class') === activAcc){
+            $(this).next().slideUp();
+            $(this).removeClass(activAcc);
+          }else{
+            $accItem.removeClass(activAcc);
+            $accItem.next().slideUp();
+            $(this).addClass(activAcc);
+            $(this).next().slideDown();
+          }
+        })
+
+        // var currentAcc = null;
+        // $accItem.each(function(){
+        //   $(this).click(function(e){
+        //     e.preventDefault();
+        //     if(currentAcc){
+        //       currentAcc.slideUp('fast');
+        //       currentAcc.prev().removeClass('activ-acc');
+        //       if($(this).next().data('acc')===currentAcc.data('acc')){
+        //         currentAcc = null;
+        //         return;
+        //       }
+        //     }
+        //     currentAcc = $(this).next();
+        //     currentAcc.slideDown('fast');
+        //     $(this).addClass('activ-acc')
+        //   });
+        // });
+
+
+      };
+
+      initSectionNotice();
+
     },
     sectionApps: function(){
 
