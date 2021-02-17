@@ -390,6 +390,33 @@
       initSectionCulture();
     },
     sectionPost: function(){
+      var $window = $(window);
+      var $windowWidth = $window.innerWidth();
+      var $img = $('#section02 .img-box img');
+
+      var initSectionPost = function(){
+        setImgSrc($windowWidth);
+        resizeEvent();
+      };
+
+      var setImgSrc = function(width){
+        var imgPath = './img/main/';
+        if(width<=980) imgPath+='mpost0';
+        else imgPath+='post0';
+        for(var i = 0; i<$img.length; i++){
+          $img.eq(i).attr('src', imgPath+(i+1)+'.jpg');
+        }
+      };
+
+      var resizeEvent = function(){
+        $window.resize(function(e){
+          e.preventDefault();
+          $windowWidth = $window.innerWidth();
+          setImgSrc($windowWidth);
+        })
+      };
+
+      initSectionPost();
 
     },
     sectionEvent: function(){
