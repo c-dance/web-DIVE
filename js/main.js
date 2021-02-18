@@ -475,6 +475,20 @@
     },
     footer: function(){
 
+      var footerInit = function(){
+        setScrollTop();
+      }
+
+      var setScrollTop = function(){
+        var $scrollTop = $('.scroll-top-btn ');
+        var $body = $('html, body');
+        $scrollTop.click(function(e){
+          e.preventDefault();
+          $body.animate({scrollTop: 0}, 400);
+        });
+      };
+      
+      footerInit();
     }
     
   };

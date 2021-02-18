@@ -1327,6 +1327,7 @@
   padding: 45px 0 43px;
 }
 #footer .wrap .gap .container .cont-wrap {
+  z-index: 1;
   position: relative; 
   font-size: 16px;
   width: 100%;
@@ -1351,4 +1352,16 @@
 #footer .wrap .gap .container .cont-wrap .content:nth-child(4):before { 
   content:'|'; 
   margin-right: 8px;
+}
+#footer .scroll-top-btn { 
+  z-index: 2;
+  display: inline-block;
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+  width: 13px;
+  height: 57px;
+  background: url(../img/main/common_sprites.svg) -300px -156px no-repeat;
+  outline: none;
+  cursor: pointer;
 }

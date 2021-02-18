@@ -41,6 +41,7 @@
   #main section .wrap { width: 100%; }
   #main section .wrap .gap { padding: 0 30px; }
   #main section .wrap .gap .container { width: 100%; }
+  #main section .wrap .gap .container .full-title { padding-bottom: 2.439%; }/*30/1230*/
   /*-----sectio01-----*/
   #main #section01 { padding-top: 12.30%; }/*100px/1230*/
   #main #section01 .wrap .gap .container .section01-col01 { width: 65.04650465%; }/*800px/1230*/
@@ -110,6 +111,7 @@
     top: 30px;
     left: 177px;
   }
+  #footer .scroll-top-btn { right: 8px; }
 }
 
 @media screen and (max-width: 980px) {
@@ -251,6 +253,7 @@
     top: 0;
     left: 8px;
   }
+  #footer .scroll-top-btn { display: none; }
 }
 
 @media screen and (max-width: 780px) {
