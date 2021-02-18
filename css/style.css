@@ -70,6 +70,7 @@
   background-position: -343px -268px;
 } 
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-bar {
+  z-index: -1;
   position: absolute;
   top: 94%;
   left: -100px;
@@ -93,14 +94,15 @@
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item .gnb-menu-wrap .gnb-menu a {
   display: block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 300%;
   text-align: center;
   background: #222;
   color: #fff;
 }
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item .gnb-menu-wrap .gnb-menu:hover a {
-  font-weight: 600;
+  background: #444;
+  font-weight: 800;
 }
 #header .wrap .gap .container .header-right { float: right; }
 #header .wrap .gap .container .header-right .search-btn-wrap { 
@@ -410,7 +412,7 @@
   top: -6px;
   left: -20px;
   width: 100%;
-  height: 800px;/*javascript*/
+  height: 100vh;
   background-color: rgba(0,0,0,.3);
 }
 #header .wrap .gap .container .mobile-gnb-menu .mobile-menu-btn {
@@ -1190,10 +1192,10 @@
 }
 #main #section04 .wrap .gap .container .m-notice-contents .m-notice-acc a {
   position: relative;
-  padding: 16px 0 19px;
+  padding: 16px 50px 19px 0;
   display: inline-block;
   width: 100%;
-  height: 80px;
+  height: auto;/*80px*/
 }
 #main #section04 .wrap .gap .container .m-notice-contents .m-notice-acc a::after {
   position: absolute;
