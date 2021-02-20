@@ -230,6 +230,75 @@
     },
     sectionWhatsOn: function(){
 
+      var $window = $(window);
+      var $windowWidth = $window.innerWidth();
+
+      var $boxWrap = $('#section01 .img-wrap > a');
+      var boxCnt = $boxWrap.length;
+      var $moreBtnWrap = $('.moreBtn-wrap');
+      var $moreBtn = $('.whatsOn-moreBtn');
+
+    
+      var initWhatsOn = function(){
+        if($windowWidth<=980) setMobileWhatsOn();
+        else setPcWhatsOn();
+        resizeEvent();
+      };
+
+
+      var setMobileWhatsOn = function(){
+
+        var showCnt = 4;
+
+        var cnt = 0;
+        $boxWrap.each(function(){
+          if(cnt>3) $(this).css('display', 'none');
+          cnt++;
+        });
+
+        $moreBtnWrap.css('display', 'block');
+
+        $moreBtn.click(function(e){
+          e.preventDefault();
+          if(showCnt>=boxCnt) return;
+          else if((boxCnt-showCnt)/4>=1){
+            for(var i = showCnt-1; i<showCnt+3; i++){
+              $boxWrap.eq(i).css('display', 'block');
+            }
+            showCnt += 4;
+            console.log(showCnt);
+          }
+          else {
+            for(var i = showCnt-1; i<boxCnt; i++){
+              $boxWrap.eq(i).css('display', 'block');
+            }
+            showCnt = boxCnt;
+            console.log(showCnt);
+          }
+        })
+      };
+
+      var setPcWhatsOn = function(){
+        $moreBtnWrap.css('display', 'none');
+
+        $boxWrap.each(function(){
+          $(this).css('display', 'block');
+        });
+
+      };
+
+      var resizeEvent = function(){
+        $window.resize(function(e){
+          e.preventDefault();
+          $windowWidth = $window.innerWidth();
+          if($windowWidth<=980) setMobileWhatsOn();
+          else setPcWhatsOn();
+        });
+      }
+
+
+      initWhatsOn();
+
     },
     sectionCulture: function(){
       
@@ -252,7 +321,7 @@
       
       
       var initSectionCulture = function(){
-        if($windowWidth<980){
+        if($windowWidth<=980){
           setMobileCulture(true);
         }else{
           setMobileCulture(false);
@@ -289,7 +358,7 @@
         $window.resize(function(){
           $windowWidth = $window.innerWidth();
           $windowHeight = $window.innerHeight();
-          if($windowWidth<980){
+          if($windowWidth<=980){
             setMobileCulture(true);
           }else{            
             setMobileCulture(false);

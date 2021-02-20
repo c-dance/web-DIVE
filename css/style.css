@@ -39,12 +39,16 @@
 
 #header .wrap .gap .container .logo-wrap {
   display: inline-block;
-  margin-right: 30px;
+  width: 110px;
+  height: 28px;
+  margin-right: 36px;
 }
 
 #header .wrap .gap .container .logo-wrap .logo {
-  font-size: 30px;
-  font-weight: 600;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/main/common_sprites.svg) -9px -84px no-repeat;
 }
 
 #header .wrap .gap .container .gnb {
@@ -69,8 +73,8 @@
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item a {
   position: relative;
   display: inline-block;
+  font-family: "YouandiModern Bold", "YouandiModern";
   font-size: 20px;
-  font-weight: 800;
 }
 
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item .gnb-depth-item::after {
@@ -118,6 +122,7 @@
 
 #header .wrap .gap .container .gnb .gnb-wrap .gnb-item .gnb-menu-wrap .gnb-menu a {
   display: block;
+  font-family: "YouandiModern Reg", "YouandiModern";
   font-size: 16px;
   font-weight: 100;
   line-height: 300%;
@@ -716,9 +721,9 @@
 }
 
 #main section .wrap .gap .container .full-title .title-text {
-  font-family: "YouandiModern";
+  font-family: "YouandiModern Bold", "YouandiModern";
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 400;
   float: left;
 }
 
@@ -757,8 +762,8 @@
   height: auto;
   line-height: 130%;
   font-size: 32px;
-  font-family: "YouandiModern";
-  font-weight: 800;
+  font-family: "YouandiModern Bold", "YouandiModern";
+  font-weight: 400;
   color: #222;
   border-bottom: 4px solid #000;
 }
@@ -785,20 +790,21 @@
   /* background: #E1F0F4; */
 }
 
-#main #section01 .wrap .gap .container .section01-col01 .section01-title h2 {
+#main #section01 .wrap .gap .container .section01-col01 .section01-title .tit {
   height: auto;
   float: left;
   font-size: 32px;
 }
 
-#main #section01 .wrap .gap .container .section01-col01 .section01-title h2 a {
+#main #section01 .wrap .gap .container .section01-col01 .section01-title .tit a {
   display: inline-block;
   line-height: 130%;
   text-align: left;
 }
 
-#main #section01 .wrap .gap .container .section01-col01 .section01-title h2 a span {
+#main #section01 .wrap .gap .container .section01-col01 .section01-title .tit a span {
   display: block;
+  font-family: "Gotham Book", sans-serif;
   font-size: 18px;
 }
 
@@ -817,6 +823,7 @@
   display: block;
   height: auto;
   line-height: 20px;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
 }
 
@@ -844,9 +851,10 @@
   position: relative;
   float: left;
   width: 46px;
-  height: 86px;
+  height: auto;
   border-radius: 32px;
   margin-right: 16px;
+  background: #fff;
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .monthly-list li:first-child {
@@ -859,19 +867,21 @@
 
 #main #section01 .wrap .gap .container .section01-col01 .monthly-list li a {
   display: block;
+  height: 86px;
+  line-height: 30px;
   padding-top: 10px;
   text-align: center;
-  line-height: 30px;
-  /* background: gold; */
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .monthly-list li a .day {
   display: block;
+  font-family: "Gotham Book", sans-serif;
   font-size: 12px;
   color: #999;
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .monthly-list li a .date {
+  font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
   font-size: 20px;
 }
@@ -921,7 +931,7 @@
 
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box::after {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 6px;
   height: 6px;
@@ -939,25 +949,30 @@
   width: 410px;
   padding: 0 12px 0 45px;
   font-family: 'Noto Sans KR', sans-serif;
+  line-height: 3.4rem;
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap h4 {
-  padding-bottom: 14px;
   font-size: 18px;
   color: #444;
   display: inline;
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap h2 {
-  padding-bottom: 14px;
+  padding-bottom: 14px 0;
   font-size: 40px;
-  line-height: 3.4rem;
+  font-weight: 500;
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap p {
-  padding-bottom: 28px;
   font-size: 18px;
   color: #888;
+}
+
+#main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap span::before {
+  margin: 0 14px 0;
+  content: '|';
+  color: #999;
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap span {
@@ -990,13 +1005,41 @@
   text-align: center;
 }
 
+#main #section01 .wrap .gap .container .section01-col01 .moreBtn-wrap {
+  position: relative;
+  display: block;
+}
+#main #section01 .wrap .gap .container .section01-col01 .moreBtn-wrap .whatsOn-moreBtn {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 25px;
+  width: 100px;
+  height: 35px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 800;
+  outline: none;
+  background: #f5f6f7;
+  color: #000;
+}
+#main #section01 .wrap .gap .container .section01-col01 .moreBtn-wrap .whatsOn-moreBtn::after {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url(../img/main/common_sprites.svg) -304px -234px no-repeat;
+
+}
 /*-------------section01-col02----------------*/
 #main #section01 .wrap .gap .container .culture {
   float: right;
   padding: 0;
   width: 285px;
   height: 1260px;
-  font-family: "YouandiModern";
+  font-family: "YouandiModern Bold", "YouandiModern";
 }
 
 #main #section01 .wrap .gap .container .culture .link-box {
@@ -1141,6 +1184,8 @@
 }
 
 #main #section01 .wrap .gap .container .mobile-cultureBtn-wrap .mobile-cultureBtn span {
+  font-family: "YouandiModern";
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -1215,6 +1260,7 @@
   background-color: #fff;
   border-radius: 25px 25px 0 0;
   overflow: scroll;
+  font-family: "YouandiModern Bold", "YouandiModern";
 }
 
 #main #section01 .wrap .gap .container .mobile-culture .mobile-culture-rows .row02 h2 {
@@ -1223,6 +1269,7 @@
 }
 
 #main #section01 .wrap .gap .container .mobile-culture .mobile-culture-rows .row02 h3 {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
   line-height: 150%;
 }
@@ -1457,7 +1504,7 @@
   display: block;
   width: 810px;
   height: 234px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "AppleSDGothicM";
 }
 
 #main #section04 .wrap .gap .container .notice-contents .notice-item {
@@ -1480,7 +1527,7 @@
 #main #section04 .wrap .gap .container .notice-contents .notice-item a h3 {
   height: 86px;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 140%;
   color: #222222;
   border-bottom: 2px solid #000;
@@ -1515,6 +1562,7 @@
   width: 100%;
   height: auto;
   /*80px*/
+  font-family: "AppleSDGothicM";
 }
 
 #main #section04 .wrap .gap .container .m-notice-contents .m-notice-acc a::after {
@@ -1540,7 +1588,7 @@
 #main #section04 .wrap .gap .container .m-notice-contents .m-notice-acc a h3 {
   font-size: 14px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 400;
   color: #222;
 }
 
@@ -1680,6 +1728,7 @@
   height: 30px;
   line-height: 170%;
   color: #888;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 #footer .wrap .gap .container .cont-wrap span {
