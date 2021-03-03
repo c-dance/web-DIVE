@@ -293,9 +293,12 @@
   height: 100%;
 }
 
-#header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-col h2 {
+#header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-col>.title {
+  display: inline-block;
+  width: 100%;
+  height: auto;
   font-size: 26px;
-  line-height: 100%;
+  line-height: 30px;
 }
 
 #header .wrap .gap .container .search-area .search-rows .search-row02 .row02-contents .search-tags {
@@ -892,6 +895,7 @@
 
 /* section01 - What’s on 이미지 */
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap {
+  z-index: 1;
   position: relative;
   width: 100%;
   height: 100%;
@@ -1006,13 +1010,21 @@
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .moreBtn-wrap {
+  z-index: 2;
   position: relative;
+  top: -56px;
+  left: 0;
   display: block;
+  width: 100%;
+  height: 75px;
+  padding-top: 40px;
+  background-color: #fff;
 }
+
 #main #section01 .wrap .gap .container .section01-col01 .moreBtn-wrap .whatsOn-moreBtn {
   position: relative;
   display: block;
-  margin: 30px auto 0;
+  margin: 0 auto;
   padding: 10px 25px;
   width: 100px;
   height: 35px;
@@ -1023,6 +1035,7 @@
   background: #f5f6f7;
   color: #000;
 }
+
 #main #section01 .wrap .gap .container .section01-col01 .moreBtn-wrap .whatsOn-moreBtn::after {
   position: absolute;
   top: 4px;
@@ -1033,6 +1046,7 @@
   background: url(../img/main/common_sprites.svg) -304px -234px no-repeat;
 
 }
+
 /*-------------section01-col02----------------*/
 #main #section01 .wrap .gap .container .culture {
   float: right;
@@ -1645,7 +1659,7 @@
 
 #main #section05 .wrap .gap .container .cont-wrap .app-txt {
   margin: 28px 0 45px;
-  font-family: 'YouandiModernHEB';
+  font-family: 'YouandiModern Bold';
   font-size: 30px;
   text-align: center;
 }

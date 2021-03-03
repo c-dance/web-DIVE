@@ -227,7 +227,7 @@
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .monthly-list {
-    right: 10px;
+    right: 0;
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box {
@@ -238,7 +238,6 @@
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap {
     width: 48.75%;
     height: 100%;
-    background: #ccc;
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .right-wrap {
@@ -312,7 +311,6 @@
   #main #section01 .wrap .gap .container .section01-col01 {
     width: 100%;
     height: auto;
-    /* background: tomato; */
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .section01-title {
@@ -321,7 +319,6 @@
     height: 40px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
-    /* background: blueviolet; */
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .section01-title .tit {}
@@ -330,7 +327,6 @@
     display: inherit;
     height: auto;
     font-size: 24px;
-    /* background: greenyellow; */
   }
 
   /* 2.19
@@ -345,8 +341,7 @@
     height: 40px;
     line-height: 40px;
     font-size: 12px;
-    color: 888;
-    background: blue;
+    color: #888;
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .section01-title .view-more a::before {
@@ -356,13 +351,11 @@
   /* What’s on 일정 */
   #main #section01 .wrap .gap .container .section01-col01 .monthly-list {
     position: relative;
-
     left: 0;
     top: 0;
     width: 100%;
     height: auto;
     padding: 12px 4.5px;
-    /* background: cornflowerblue; */
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .monthly-list li {
@@ -385,24 +378,16 @@
     font-size: 14px;
   }
 
-  /* 2.19 문제발생 영역 */
-  /* What’s on 이미지 */
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap {
-    /* position: inherit; */
     position: relative;
     top: 0;
-    /* margin: 0; */
+    margin-top: 0;
     height: 100%;
-    /* padding-top: 64px; */
-    /* padding: 26px 20px 0; */
-    background: #f2f2f2;
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a {
-    height: 100%;
+    height: 152px;
     display: block;
-    margin-bottom: 56px;
-    background: cyan;
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a:last-child {
@@ -410,46 +395,48 @@
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box {
+    padding-bottom: 56px;
     width: 100%;
-    height: 95px;
-    background: cornflowerblue;
+    height: 100%;
+  }
+
+  #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box::after {
+    top: 0px;
   }
 
   /* What’s on 텍스트 */
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap {
-    padding: 0;
-    /* background: #ccc; */
+    width: calc(100% - 95px);
+    height: 95px;
+    padding: 0 20px;
+    line-height: 1rem;
   }
 
-  #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap h4,
-  #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap span {
-    height: 18px;
+
+  #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap h4 {
+    display: inline-block;
+    margin-right: 8px;
     font-size: 12px;
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap h2 {
+    padding: 8px 0;
     font-size: 16px;
-    font-weight: 700;
-    padding-bottom: 0;
-    line-height: 2;
-    background: gold;
   }
-
-  /* #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap h2 {
-    padding-bottom: 14px;
-    font-size: 40px;
-    line-height: 3.4rem;
-    background: green;
-  } */
-
-
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap p {
-    margin: 5px 0 0;
+    margin-bottom: 8px;
     font-size: 13px;
-    color: #666;
-    padding-bottom: 0;
   }
+
+  #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap span::before {
+    margin: 0 8px 0 0;
+  }
+
+  #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap span {
+    font-size: 12px;
+  }
+
 
   /* What’s on 이미지 */
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .right-wrap {
@@ -457,7 +444,6 @@
     float: right;
     width: 95px;
     /* height: 100%; */
-    background: darkcyan;
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .right-wrap img {
@@ -466,10 +452,12 @@
   }
 
   #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .right-wrap .img-text {
-    width: 26px;
+    display: inline-block;
+    width: auto;
     height: auto;
-    padding-left: 0 2px;
+    padding: 0 2px;
     font-size: 11px;
+    line-height: 1.4rem;
   }
 
   /*-----section02-----*/

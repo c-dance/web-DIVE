@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
- <title>현대카드 DIVE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>현대카드 DIVE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta charset="UTF-8">
   <meta name="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="송민채, c-dance">
@@ -18,673 +19,677 @@
   <!--style sheet-->
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/queries.css"> 
+  <link rel="stylesheet" href="./css/queries.css">
   <!--javascript libarary-->
-    <script src="./js/lib/jquery-1.12.4.min.js"></script>
-    <script src="./js/lib/jquery.touchSwipe.js"></script>
-    <script src="./js/lib/prefixfree.min.js"></script>
-    <script src="./js/lib/jquery.easing.1.3.js"></script>
-    <!--for Internet Explore-->
-    <!--[if lte IE 9]>
+  <script src="./js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./js/lib/jquery.touchSwipe.js"></script>
+  <script src="./js/lib/prefixfree.min.js"></script>
+  <script src="./js/lib/jquery.easing.1.3.js"></script>
+  <!--for Internet Explore-->
+  <!--[if lte IE 9]>
         <script src="./js/lib/IE9.js"></script>
     <![endif]-->
 
-    <!--[if lte IE 8]>
+  <!--[if lte IE 8]>
         <script src="./js/lib/html5shiv.min.js"></script>    
         <script src="./js/lib/jqPIE.js"></script>    
         <script src="./js/lib/PIE.js"></script>   
     <![endif]-->
-  
+
 </head>
+
 <body>
-   <div id="skip-menu">
-   </div>
-   <!--main contents-->
+  <div id="skip-menu">
+  </div>
+  <!--main contents-->
   <div id="wrap">
-  <!--header-->
-  <header id="header">
-    <div class="wrap">
-      <div class="gap">
-        <div class="container clearfix">
-          <h1 class="logo-wrap">
-            <a href="#section01" class="logo" alt="home"></a>
-          </h1>
-          <nav class="gnb">
-            <ul class="gnb-wrap clearfix">
-              <li class="gnb-item">
-                <a class="gnb-item-link" href="./sub01.html" alt="menu">what's on</a>
-              </li>
-              <li class="gnb-item">
-                <a class="gnb-depth-item gnb-item-link" href="javascript:void(0)" alt="menu">space</a>
-                <ul class="gnb-menu-wrap hide">
-                  <li class="gnb-menu"><a href="">DESIGN LIBRARY</a></li>
-                  <li class="gnb-menu"><a href="">TRAVEL LIBRARY</a></li>
-                  <li class="gnb-menu"><a href="">MUSIC LIBRARY</a></li>
-                  <li class="gnb-menu"><a href="">COOKING LABRARY</a></li>
-                  <li class="gnb-menu"><a href="">LINDERSTATE</a></li>
-                  <li class="gnb-menu"><a href="">VINYL & PLASTIC</a></li>
-                  <li class="gnb-menu"><a href="">STORAGE</a></li>
-                </ul>
-              </li>
-              <li class="gnb-item">
-                <a class="gnb-depth-item gnb-item-link" href="javascript:void(0)" alt="culture">culture</a>
-                <ul class="gnb-menu-wrap hide">
-                  <li class="gnb-menu"><a href="">SUPER CONCERT</a></li>
-                  <li class="gnb-menu"><a href="">CULTURE PROJECT</a></li>
-                  <li class="gnb-menu"><a href="">DAVINCI MOTEL</a></li>
-                  <li class="gnb-menu"><a href="">OVER THE RECORD</a></li>
-                  <li class="gnb-menu"><a href="">FAN MADE LIVE</a></li>
-                  <li class="gnb-menu"><a href="">LIMITIED VINYL CLUB</a></li>
-                </ul>
-              </li>
-              <li class="gnb-item">
-                <a class="gnb-item-link" href="javascript:void(0)" alt="menu">post</a>
-              </li>
-              <li class="gnb-bar"></li>
-            </ul>
-          </nav>
-          <div class="header-right">
-            <a href="javascript:void(0)" class="search-btn-wrap" alt="search">
-              <i class="search-btn"></i>
-            </a>
-            <div class="mobile-gnb">
-            <div class="mobile-trigger-wrap">
-              <a href="javascript:void(0)" class="mobile-trigger" alt="menu">
-                <i class="trigger"></i>
-                <i class="trigger"></i>
-                <i class="trigger"></i>
+    <!--header-->
+    <header id="header">
+      <div class="wrap">
+        <div class="gap">
+          <div class="container clearfix">
+            <span class="logo-wrap">
+              <a href="#section01" class="logo"></a>
+            </span>
+            <nav class="gnb">
+              <ul class="gnb-wrap clearfix">
+                <li class="gnb-item">
+                  <a class="gnb-item-link" href="#none">what's on</a>
+                </li>
+                <li class="gnb-item">
+                  <a class="gnb-depth-item gnb-item-link" href="javascript:void(0)">space</a>
+                  <ul class="gnb-menu-wrap hide">
+                    <li class="gnb-menu"><a href="">DESIGN LIBRARY</a></li>
+                    <li class="gnb-menu"><a href="">TRAVEL LIBRARY</a></li>
+                    <li class="gnb-menu"><a href="">MUSIC LIBRARY</a></li>
+                    <li class="gnb-menu"><a href="">COOKING LABRARY</a></li>
+                    <li class="gnb-menu"><a href="">LINDERSTATE</a></li>
+                    <li class="gnb-menu"><a href="">VINYL & PLASTIC</a></li>
+                    <li class="gnb-menu"><a href="">STORAGE</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-item">
+                  <a class="gnb-depth-item gnb-item-link" href="javascript:void(0)">culture</a>
+                  <ul class="gnb-menu-wrap hide">
+                    <li class="gnb-menu"><a href="">SUPER CONCERT</a></li>
+                    <li class="gnb-menu"><a href="">CULTURE PROJECT</a></li>
+                    <li class="gnb-menu"><a href="">DAVINCI MOTEL</a></li>
+                    <li class="gnb-menu"><a href="">OVER THE RECORD</a></li>
+                    <li class="gnb-menu"><a href="">FAN MADE LIVE</a></li>
+                    <li class="gnb-menu"><a href="">LIMITIED VINYL CLUB</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-item">
+                  <a class="gnb-item-link" href="javascript:void(0)">post</a>
+                </li>
+                <li class="gnb-bar"></li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <a href="javascript:void(0)" class="search-btn-wrap">
+                <i class="search-btn"></i>
               </a>
-            </div>
-            </div>
-          </div>
-          <div class="search-area hide">
-            <ul class="search-rows">
-              <li class="search-row search-row01">
-                <button class="search-closeBtn">
-                  <i class="btnLine btnLine01"></i>
-                  <i class="btnLine btnLine02"></i>
-                </button>
-                <div class="row01-contents">
-                  <ul class="search-form clearfix">
-                    <li class="input-wrap">
-                      <input class="search-input" type="text" placeholder="검색어를 입력해주세요">
-                      <i class="search-cleanBtn hide"></i>
-                      <button class="search-icon"></button>
-                    </li>
-                  </ul>
-                  <ul class="search-result hide">
-                    <li>연관 검색어 결과 로드</li>
-                  </ul>
-                  <ul class="search-history">
-                    <li class="no-history">최근 검색어 내역이 없습니다.</li>
-                  </ul>
+              <div class="mobile-gnb">
+                <div class="mobile-trigger-wrap">
+                  <a href="javascript:void(0)" class="mobile-trigger">
+                    <i class="trigger"></i>
+                    <i class="trigger"></i>
+                    <i class="trigger"></i>
+                  </a>
                 </div>
-              </li>
-              <li class="search-row search-row02">
-                <div class="row02-contents clearfix">
-                  <ul class="search-col search-tags">
-                    <h2>인기 검색어</h2>
-                  </ul>
-                  <ul class="search-col search-event clearfix">
-                    <h2>Event</h2>
+              </div>
+            </div>
+            <div class="search-area hide">
+              <ul class="search-rows">
+                <li class="search-row search-row01">
+                  <button class="search-closeBtn">
+                    <i class="btnLine btnLine01"></i>
+                    <i class="btnLine btnLine02"></i>
+                  </button>
+                  <div class="row01-contents">
+                    <ul class="search-form clearfix">
+                      <li class="input-wrap">
+                        <input class="search-input" type="text" placeholder="검색어를 입력해주세요">
+                        <i class="search-cleanBtn hide"></i>
+                        <button class="search-icon"></button>
+                      </li>
+                    </ul>
+                    <ul class="search-result hide">
+                      <li>연관 검색어 결과 로드</li>
+                    </ul>
+                    <ul class="search-history">
+                      <li class="no-history">최근 검색어 내역이 없습니다.</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="search-row search-row02">
+                  <div class="row02-contents clearfix">
+                    <ul class="search-col search-tags">
+                      <li class="title">인기 검색어</li>
+                    </ul>
+                    <ul class="search-col search-event clearfix">
+                      <li class="title">Event</li>
                       <li>
-                        <a href="javascript:void(0)" alt="event">
-                        <p>#쇼미 더 부스트 (ft. MX BOOST)</p>
+                        <a href="javascript:void(0)">
+                          <p>#쇼미 더 부스트 (ft. MX BOOST)</p>
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)" alt="event">
+                        <a href="javascript:void(0)">
                           <p>#MX부슷템 : 발로차지</p>
                         </a>
                       </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="m-search-area hide">
-            <button class="m-search-closeBtn"></button>
-            <ul class="m-search-rows-wrap">
-              <li class="m-search-row01 input-wrap">
-                <input type="text" name="search" class="search-input" placeholder="검색어를 입력해 주세요">
-                <i class="search-cleanBtn hide"></i>
-              </li>
-              <li class="m-search-row02 clearfix">
-                <a href="javascript:void(0)">인기 검색어</a>
-                <a href="javascript:void(0)">최근 검색어</a>
-              </li>
-              <li class="m-search-row03">
-                <ul class="search-tags m-search-tags" id="search-tags"></ul>
-                <ul class="search-history m-search-history" id="search-history">
-                  <li class="history no-history">최근 검색어 내역이 없습니다.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="mobile-gnb-menu hide">
-            <button class="mobile-menu-btn">
-              <i class="mobile-btn-bar mobile-btn-bar01"></i>
-              <i class="mobile-btn-bar mobile-btn-bar02"></i>
-            </button>
-            <div class="scroll-menu">
-              <ul class="scroll-wrap">
-                <li class="scroll-cols scroll-col01">
-                  <h1>DIVE</h1>
-                  <h2>취향을 업데이트하는 <br> 힙스터들의 필수 앱</h2>
-                  <div class="mobile-links-wrap clearfix">
-                    <a href="javascript:void(0)" class="mobile-link" alt="read more">알아보기</a>
-                    <a href="javascript:void(0)" class="mobile-link" alt="app download">다운로드</a>
+                    </ul>
                   </div>
                 </li>
-                <li class="scroll-cols scroll-col02">
-                  <h3 class="scroll-link"><a class="link-underline" href="javascript:void(0)" alt="what's on">What's on</a></h3>
-                  <h3 class="scroll-link"><a href="javascript:void(0)" alt="space">Space</a></h3>
-                    <ul class="sub-menu-wrap">
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="library">DESIGN LIBRARY</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="library">TRAVEL LIBRARY</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="library">MUSIC LIBRARY</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="library">COOKING LABRARY</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="library">LINDERSTATE</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="library">VINYL & PLASTIC</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="library">STORAGE</a></li>
-                    </ul>
-                  <h3 class="scroll-link"><a href="javascript:void(0)" alt="culture">Culture</a></h3>
-                    <ul class="sub-menu-wrap">
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="culture menu">SUPER CONCERT</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="culture menu">CULTURE PROJECT</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="culture menu">DAVINCI MOTEL</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="culture menu">OVER THE RECORD</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="culture menu">FAN MADE LIVE</a></li>
-                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)" alt="culture menu">LIMITIED VINYL CLUB</a></li>
-                    </ul>
-                  <h3 class="scroll-link"><a class="link-underline" href="javascript:void(0)" alt="post">Post</a></h3>
+              </ul>
+            </div>
+            <div class="m-search-area hide">
+              <button class="m-search-closeBtn"></button>
+              <ul class="m-search-rows-wrap">
+                <li class="m-search-row01 input-wrap">
+                  <input type="text" name="search" class="search-input" placeholder="검색어를 입력해 주세요">
+                  <i class="search-cleanBtn hide"></i>
+                </li>
+                <li class="m-search-row02 clearfix">
+                  <a href="javascript:void(0)">인기 검색어</a>
+                  <a href="javascript:void(0)">최근 검색어</a>
+                </li>
+                <li class="m-search-row03">
+                  <ul class="search-tags m-search-tags" id="search-tags"></ul>
+                  <ul class="search-history m-search-history" id="search-history">
+                    <li class="history no-history">최근 검색어 내역이 없습니다.</li>
+                  </ul>
                 </li>
               </ul>
+            </div>
+            <div class="mobile-gnb-menu hide">
+              <button class="mobile-menu-btn">
+                <i class="mobile-btn-bar mobile-btn-bar01"></i>
+                <i class="mobile-btn-bar mobile-btn-bar02"></i>
+              </button>
+              <div class="scroll-menu">
+                <ul class="scroll-wrap">
+                  <li class="scroll-cols scroll-col01">
+                    <h1>DIVE</h1>
+                    <h2>취향을 업데이트하는 <br> 힙스터들의 필수 앱</h2>
+                    <div class="mobile-links-wrap clearfix">
+                      <a href="javascript:void(0)" class="mobile-link">알아보기</a>
+                      <a href="javascript:void(0)" class="mobile-link">다운로드</a>
+                    </div>
+                  </li>
+                  <li class="scroll-cols scroll-col02">
+                    <h3 class="scroll-link"><a class="link-underline" href="javascript:void(0)">What's on</a></h3>
+                    <h3 class="scroll-link"><a href="javascript:void(0)">Space</a></h3>
+                    <ul class="sub-menu-wrap">
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">DESIGN LIBRARY</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">TRAVEL LIBRARY</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">MUSIC LIBRARY</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">COOKING LABRARY</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">LINDERSTATE</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">VINYL $amp; PLASTIC</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">STORAGE</a></li>
+                    </ul>
+                    <h3 class="scroll-link"><a href="javascript:void(0)">Culture</a></h3>
+                    <ul class="sub-menu-wrap">
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">SUPER CONCERT</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">CULTURE PROJECT</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">DAVINCI MOTEL</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">OVER THE RECORD</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">FAN MADE LIVE</a></li>
+                      <li class="sub-menu"><a class="link-underline" href="javascript:void(0)">LIMITIED VINYL CLUB</a></li>
+                    </ul>
+                    <h3 class="scroll-link"><a class="link-underline" href="javascript:void(0)">Post</a></h3>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <!--main sections-->
-  <main id="main">
-    <section id="section01">
-      <div class="wrap">
-        <div class="gap">
-          <div class="container clearfix">
-            <!--what's on-->
-            <div class="section01-col01 clearfix">
-              <div class="section01-title clearfix">
+    </header>
+    <!--main sections-->
+    <main id="main">
+      <section id="section01">
+        <div class="wrap">
+          <div class="gap">
+            <div class="container clearfix">
+              <!--what's on-->
+              <div class="section01-col01 clearfix">
+                <div class="section01-title clearfix">
                   <h2 class="tit">
-                      <a href="#">What's On?<span>February 2021</span></a>
+                    <a href="#">What's On?<span>February 2021</span></a>
                   </h2>
                   <div class="view-more"><a href="#">전체보기</a></div>
-              </div>
-              <!--calender-->
-              <ul class="monthly-list clearfix">
+                </div>
+                <!--calender-->
+                <ul class="monthly-list clearfix">
                   <li>
-                      <a href="#">
-                          <span class="day">Mon</span><span class="date">15</span>
-                      </a>
+                    <a href="#">
+                      <span class="day">Mon</span><span class="date">15</span>
+                    </a>
                   </li>
                   <li>
-                      <a href="#">
-                          <span class="day">Tue</span><span class="date">16</span>
-                      </a>
+                    <a href="#">
+                      <span class="day">Tue</span><span class="date">16</span>
+                    </a>
                   </li>
                   <li>
-                      <a href="#">
-                          <span class="day">Wed</span><span class="date">17</span>
-                      </a>
+                    <a href="#">
+                      <span class="day">Wed</span><span class="date">17</span>
+                    </a>
                   </li>
                   <li>
-                      <a href="#">
-                          <span class="day">Thu</span><span class="date">18</span>
-                      </a>
+                    <a href="#">
+                      <span class="day">Thu</span><span class="date">18</span>
+                    </a>
                   </li>
                   <li>
-                      <a href="#">
-                          <span class="day">Fri</span><span class="date">19</span>
-                      </a>
+                    <a href="#">
+                      <span class="day">Fri</span><span class="date">19</span>
+                    </a>
                   </li>
                   <li>
-                      <a href="#">
-                          <span class="day">Sat</span><span class="date">20</span>
-                      </a>
+                    <a href="#">
+                      <span class="day">Sat</span><span class="date">20</span>
+                    </a>
                   </li>
                   <li>
-                      <a href="#">
-                          <span class="day">Sun</span><span class="date">21</span>
-                      </a>
+                    <a href="#">
+                      <span class="day">Sun</span><span class="date">21</span>
+                    </a>
                   </li>
-              </ul>
-              <!-- img-wrap -->
-              <div class="img-wrap">
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>02/17(수) ~ 02/22(월)</h4>
-                              <h2>초보 캠퍼를 위한 캠핑 A to Z</h2>
-                              <p>트래블 라이브러리 라이브 테마 토크 신청</p>
-                              <h4>트래블 라이브러리</h4><span>예약</span>
-                          </div>
-                          <div class="right-wrap">
-                              <img src="img/main/thum01.jpg" alt="">
-                              <span class="img-text">청담</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>02/15(월) ~ 02/21(일)</h4>
-                              <h2>DIVE에서 뉴욕 MoMA 전시를 관람해봐!</h2>
-                              <p><양혜규: 손잡이>전, 온라인 관람과 QnA</p>
-                              <span>예약</span>
-                          </div>
-                          <div class="right-wrap">
-                              <img src="img/main/thum02.jpg" alt="">
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>02/09(화) ~ 02/21(일)</h4>
-                              <h2>카더가든 한정판 바이닐</h2>
-                              <p>Limited Vinyl Club</p>
-                              <h4>바이닐앤플라스틱</h4><span>예약</span>
-                          </div>
-                          <div class="right-wrap">
-                            <img src="img/main/thum03.jpg" alt="">
-                            <span class="img-text">이태원</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>02/05(금) ~ 04/04(일)</h4>
-                              <h2>달콤 쌉싸름한 초콜릿</h2>
-                              <p>Food Theme 12. Chocolate</p>
-                              <h4>쿠킹 라이브러리</h4>
-                          </div>
-                          <div class="right-wrap">
-                            <img src="./img/main/thum04.jpg" alt="">
-                            <span class="img-text">청담</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>02/02(화) ~ 04/04(일)</h4>
-                              <h2>도심 속 캠핑</h2>
-                              <p>Travel Theme 59. Camping</p>
-                              <h4>트래블 라이브러리</h4>
-                          </div>
-                          <div class="right-wrap">
-                            <img src="./img/main/thum05.jpg" alt="">
-                            <span class="img-text">청담</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>02/02(화) ~ 04/04(일)</h4>
-                              <h2>K-포크의 위엄</h2>
-                              <p>뮤직 테마 01. K-POP 이전의 역사</p>
-                              <h4>뮤직 라이브러리</h4>
-                          </div>
-                          <div class="right-wrap">
-                            <img src="./img/main/thum06.jpg" alt="">
-                            <span class="img-text">이태원</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>02/01(월) ~ 02/28(일)</h4>
-                              <h2>팝과 결합한 그래픽디자인</h2>
-                              <p>2월의 레어 북 & <라이프> 매거진 컬렉션</p>
-                              <h4>디자인 라이브러리</h4>
-                          </div>
-                          <div class="right-wrap">
-                            <img src="./img/main/thum07.jpg" alt="">
-                            <span class="img-text">가회</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>01/26(화) ~ 04/11(일)</h4>
-                              <h2>길 위에서</h2>
-                              <p>On the Road Off the Road</p>
-                              <h4>트래블 라이브러리</h4>
-                          </div>
-                          <div class="right-wrap">
-                            <img src="./img/main/thum08.jpg" alt="">
-                            <span class="img-text">청담</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>01/25(월) ~ 02/28(일)</h4>
-                              <h2>재즈를 만난 스누피</h2>
-                              <p>다채로운 피너츠의 음악 세계</p>
-                              <h4>바이닐앤플라스틱</h4>
-                          </div>
-                          <div class="right-wrap">
-                            <img src="./img/main/thum09.jpg" alt="">
-                            <span class="img-text">이태원</span>
-                          </div>
-                      </div>
-                  </a>
-                  <a href="">
-                      <div class="img-box clearfix">
-                          <div class="left-wrap">
-                              <h4>01/20(수) ~ 03/31(수)</h4>
-                              <h2>그래픽디자인을 읽다</h2>
-                              <p>디자인 테마 03. Graphic Design</p>
-                              <h4>디자인 라이브러리</h4><span>예약</span>
-                          </div>
-                          <div class="right-wrap">
-                              <img src="./img/main/thum10.jpg" alt="">
-                              <span class="img-text">이태원</span>
-                          </div>
-                      </div>
-                  </a>
-              </div><!-- img-wrap -->
-              <div class="moreBtn-wrap">
-                <button class="whatsOn-moreBtn">더 보기</button>
-              </div>
-          </div><!-- section01-col01 -->
-            <section class="culture">
-             <h2 class="section-title section01-title">
-                현대카드
-                <br>
-                space, culture
-             </h2>
-              <article class="link-box link-box01">
-                <h3 class="link-box-title">space</h3>
-                <ul class="link-list clearfix">
-                  <li class="link-item"><a href="javascript:void(0) alt="space"><i class="link-img link-img1"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0) alt="space"><i class="link-img link-img2"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0) alt="space"><i class="link-img link-img3"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0) alt="space"><i class="link-img link-img4"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0) alt="space"><i class="link-img link-img5"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0) alt="space"><i class="link-img link-img6"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0) alt="space"><i class="link-img link-img7"></i></a></li>
                 </ul>
-              </article>
-              <article class="link-box link-box02">
-                <h3 class="link-box-title">culture</h3>
-                <ul class="link-list clearfix">
-                  <li class="link-item"><a href="javascript:void(0)" alt="culture"><i class="link-img link-img8"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0)" alt="culture"><i class="link-img link-img9"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0)" alt="culture"><i class="link-img link-img10"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0)" alt="culture"><i class="link-img link-img11"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0)" alt="culture"><i class="link-img link-img12"></i></a></li>
-                  <li class="link-item"><a href="javascript:void(0)" alt="culture"><i class="link-img link-img13"></i></a></li>
-                </ul>
-              </article>
-            </section> 
-            <div class="mobile-cultureBtn-wrap hide">
-              <button class="mobile-cultureBtn"><span>현대카드 Space∙Culture</span></button>
-            </div>
-            <section class="mobile-culture hide">
-              <div class="mobile-culture-rows">
-                    <div class="row01">
-                      <div class="closeBtn-wrap">
-                        <i class="btnLine btnLine01"></i>
-                        <i class="btnLine btnLine02"></i>
+                <!-- img-wrap -->
+                <div class="img-wrap">
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>02/17(수) ~ 02/22(월)</h4>
+                        <h2>초보 캠퍼를 위한 캠핑 A to Z</h2>
+                        <p>트래블 라이브러리 라이브 테마 토크 신청</p>
+                        <h4>트래블 라이브러리</h4><span>예약</span>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="img/main/thum01.jpg" alt="">
+                        <span class="img-text">청담</span>
                       </div>
                     </div>
-                    <div class="row02">
-                      <h2>현대카드 Space∙Culture</h2>
-                      <h3>현대카드가 제안하는 새로운 영감의 공간과<br>특별한 문화경험</h3>
-                      <div class="m-link-list-wrap">
-                        <h4><strong>Space</strong></h4>
-                        <ul class="m-link-list clearfix">
-                          <li class="link-item"><a href="javascript:void(0)" alt="space"><i class="link-img link-img1"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="space"><i class="link-img link-img2"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="space"><i class="link-img link-img3"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="space"><i class="link-img link-img4"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="space"><i class="link-img link-img5"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="space"><i class="link-img link-img6"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="space"><i class="link-img link-img7"></i></a></li>
-                        </ul>
-                        <h4><strong>Culture</strong></h4>
-                        <ul class="m-link-list clearfix">
-                          <li class="link-item"><a href="javascript:void(0)" alt="culture menu"><i class="link-img link-img8"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="culture menu"><i class="link-img link-img9"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="culture menu"><i class="link-img link-img10"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="culture menu"><i class="link-img link-img11"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="culture menu"><i class="link-img link-img12"></i></a></li>
-                          <li class="link-item"><a href="javascript:void(0)" alt="culture menu"><i class="link-img link-img13"></i></a></li>
-                        </ul>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>02/15(월) ~ 02/21(일)</h4>
+                        <h2>DIVE에서 뉴욕 MoMA 전시를 관람해봐!</h2>
+                        <p>
+                          &lt;양혜규: 손잡이&gt;전, 온라인 관람과 QnA
+                        </p>
+                        <span>예약</span>
                       </div>
+                      <div class="right-wrap">
+                        <img src="img/main/thum02.jpg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>02/09(화) ~ 02/21(일)</h4>
+                        <h2>카더가든 한정판 바이닐</h2>
+                        <p>Limited Vinyl Club</p>
+                        <h4>바이닐앤플라스틱</h4><span>예약</span>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="img/main/thum03.jpg" alt="">
+                        <span class="img-text">이태원</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>02/05(금) ~ 04/04(일)</h4>
+                        <h2>달콤 쌉싸름한 초콜릿</h2>
+                        <p>Food Theme 12. Chocolate</p>
+                        <h4>쿠킹 라이브러리</h4>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="./img/main/thum04.jpg" alt="">
+                        <span class="img-text">청담</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>02/02(화) ~ 04/04(일)</h4>
+                        <h2>도심 속 캠핑</h2>
+                        <p>Travel Theme 59. Camping</p>
+                        <h4>트래블 라이브러리</h4>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="./img/main/thum05.jpg" alt="">
+                        <span class="img-text">청담</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>02/02(화) ~ 04/04(일)</h4>
+                        <h2>K-포크의 위엄</h2>
+                        <p>뮤직 테마 01. K-POP 이전의 역사</p>
+                        <h4>뮤직 라이브러리</h4>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="./img/main/thum06.jpg" alt="">
+                        <span class="img-text">이태원</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>02/01(월) ~ 02/28(일)</h4>
+                        <h2>팝과 결합한 그래픽디자인</h2>
+                        <p>2월의 레어 북 &amp; &lt;라이프&gt; 매거진 컬렉션</p>
+                        <h4>디자인 라이브러리</h4>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="./img/main/thum07.jpg" alt="">
+                        <span class="img-text">가회</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>01/26(화) ~ 04/11(일)</h4>
+                        <h2>길 위에서</h2>
+                        <p>On the Road Off the Road</p>
+                        <h4>트래블 라이브러리</h4>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="./img/main/thum08.jpg" alt="">
+                        <span class="img-text">청담</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>01/25(월) ~ 02/28(일)</h4>
+                        <h2>재즈를 만난 스누피</h2>
+                        <p>다채로운 피너츠의 음악 세계</p>
+                        <h4>바이닐앤플라스틱</h4>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="./img/main/thum09.jpg" alt="">
+                        <span class="img-text">이태원</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="img-box clearfix">
+                      <div class="left-wrap">
+                        <h4>01/20(수) ~ 03/31(수)</h4>
+                        <h2>그래픽디자인을 읽다</h2>
+                        <p>디자인 테마 03. Graphic Design</p>
+                        <h4>디자인 라이브러리</h4><span>예약</span>
+                      </div>
+                      <div class="right-wrap">
+                        <img src="./img/main/thum10.jpg" alt="">
+                        <span class="img-text">이태원</span>
+                      </div>
+                    </div>
+                  </a>
+                </div><!-- img-wrap -->
+                <div class="moreBtn-wrap">
+                  <button class="whatsOn-moreBtn">더 보기</button>
+                </div>
+              </div><!-- section01-col01 -->
+              <section class="culture">
+                <h2 class="section-title section01-title">
+                  현대카드
+                  <br>
+                  space, culture
+                </h2>
+                <article class="link-box link-box01">
+                  <h3 class="link-box-title">space</h3>
+                  <ul class="link-list clearfix">
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img1"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img2"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img3"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img4"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img5"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img6"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img7"></i></a></li>
+                  </ul>
+                </article>
+                <article class="link-box link-box02">
+                  <h3 class="link-box-title">culture</h3>
+                  <ul class="link-list clearfix">
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img8"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img9"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img10"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img11"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img12"></i></a></li>
+                    <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img13"></i></a></li>
+                  </ul>
+                </article>
+              </section>
+              <div class="mobile-cultureBtn-wrap hide">
+                <button class="mobile-cultureBtn"><span>현대카드 Space∙Culture</span></button>
+              </div>
+              <section class="mobile-culture hide">
+                <div class="mobile-culture-rows">
+                  <div class="row01">
+                    <div class="closeBtn-wrap">
+                      <i class="btnLine btnLine01"></i>
+                      <i class="btnLine btnLine02"></i>
                     </div>
                   </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="section02">
-      <div class="wrap">
-        <div class="gap">
-          <div class="container">
-            <!--section02 title-->
-          <div class="section-title full-title clearfix">
-            <h2 class="title-text">Post</h2>
-            <div class="view-more clearfix">
-              <a href="#">전체보기</a>
-            </div>
-          </div>
-           <!-- section02 post-wrap -->
-           <div class="post-wrap clearfix">
-            <div class="post-box">
-              <a href="">
-                <div class="img-box"><img src="./img/main/post01.jpg" alt=""></div>
-                <div class="text-wrap">
-                    <h5>여행</h5>
-                    <h3>집으로 배달되는 전국 여행</h3>
-                    <h4>전국 집콕 여행 꾸러미 자랑</h4>
+                  <div class="row02">
+                    <h2>현대카드 Space∙Culture</h2>
+                    <h3>현대카드가 제안하는 새로운 영감의 공간과<br>특별한 문화경험</h3>
+                    <div class="m-link-list-wrap">
+                      <h4><strong>Space</strong></h4>
+                      <ul class="m-link-list clearfix">
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img1"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img2"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img3"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img4"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img5"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img6"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img7"></i></a></li>
+                      </ul>
+                      <h4><strong>Culture</strong></h4>
+                      <ul class="m-link-list clearfix">
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img8"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img9"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img10"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img11"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img12"></i></a></li>
+                        <li class="link-item"><a href="javascript:void(0)"><i class="link-img link-img13"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </a>
-            </div>
-            <div class="post-box">
-              <a href="">
-                <div class="img-box"><img src="./img/main/post02.jpg" alt=""></div>
-                <div class="text-wrap">
-                    <h5>스타일</h5>
-                    <h3>존 레논의 메이페어</h3>
-                    <h4>박지호의 '요즘 아이템'</h4>
-                </div>
-              </a>
-            </div>
-            <div class="post-box">
-              <a href="">
-                <div class="img-box"><img src="./img/main/post03.jpg" alt=""></div>
-                <div class="text-wrap">
-                    <h5>음악</h5>
-                    <h3>실리카겔이라는 장르</h3>
-                    <h4>뮤직 라이브러리 라이브 보너스트랙 다시보기</h4>
-                </div>
-              </a>
-            </div>
-            <div class="post-box">
-              <a href="">
-                <div class="img-box"><img src="./img/main/post04.jpg" alt=""></div>
-                <div class="text-wrap">
-                    <h5>건축·인테리어</h5>
-                    <h3>작사가의  집</h3>
-                    <h4>그녀의 집으로 놀러 오세요 </h4>
-                </div>
-              </a>
-            </div>
-        </div><!-- post-wrap -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="section03">
-      <div class="wrap">
-        <div class="gap">
-          <div class="container">
-            <div class="section-title full-title clearfix">
-              <h2 class="title-text">Event</h2>
-              <div class="view-more clearfix">
-                <a href="#">전체보기</a>
-              </div>
-            </div>
-           <div class="event-wrap clearfix">
-            <div class="event-box event-box01">
-              <a href="javascript:void(0)" class="event-link" alt="event">
-                <div class="event-text">
-                  <h3>#MX부슷템: 중독됐구미</h3>
-                  <p>MX부슷툰 댓글 이벤트 #1</p>
-                </div>
-              </a>
-            </div>
-            <div class="event-box event-box02">
-              <a href="javascript:void(0)" class="event-link" alt="event">
-                <div class="event-text">
-                  <h3>#쇼미 더 부스트 (ft. MX BOOST)</h3>
-                  <p>MX BOOST 굿즈 랜덤 당첨 기회!</p>
-                </div>
-              </a>
-              </div>
+              </section>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="section04">
-      <div class="wrap">
-        <div class="gap">
-          <div class="container clearfix">
-            <div class="section-title full-title clearfix">
-              <h2 class="title-text">Notice</h2>
-              <div class="view-more">
-                <a href="#">전체보기</a>
+      </section>
+      <section id="section02">
+        <div class="wrap">
+          <div class="gap">
+            <div class="container">
+              <!--section02 title-->
+              <div class="section-title full-title clearfix">
+                <h2 class="title-text">Post</h2>
+                <div class="view-more clearfix">
+                  <a href="#">전체보기</a>
+                </div>
               </div>
-            </div>
-            <ul class="notice-contents clearfix">
-              <li class="notice-item">
-                <a href="javascript:void(0)">
-                  <h3 class="notice-title">설 연휴 기간 휴관 안내 드립니다.</h3>
-                  <p>2021년 설 연휴 현대카드 Space의 휴관을 안내드리오니 이용에 참고 부탁드립니다.</p>
-                  <span>2021.02.04</span>
-                </a>
-              </li>
-              <li class="notice-item">
-                <a href="javascript:void(0)">
-                  <h3 class="notice-title">1월 28일 행사에 따른 단축 운영 안내드립니다.</h3>
-                  <p>2021. 1. 28 (목) 행사 진행으로 현대카드 뮤직 라이브러리의 운영시간이 단축되오니 양해 부탁 드립니다.</p>
-                  <span>2021.01.22</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="m-notice-contents">
-              <li class="m-notice-acc">
-                <a href="">
-                  <h3>설 연휴 기간 휴관 안내 드립니다.</h3>
-                  <span>2021.02.04</span>
+              <!-- section02 post-wrap -->
+              <div class="post-wrap clearfix">
+                <div class="post-box">
+                  <a href="">
+                    <div class="img-box"><img src="./img/main/post01.jpg" alt=""></div>
+                    <div class="text-wrap">
+                      <h5>여행</h5>
+                      <h3>집으로 배달되는 전국 여행</h3>
+                      <h4>전국 집콕 여행 꾸러미 자랑</h4>
+                    </div>
                   </a>
-                <div class="m-acc-menu" data-acc="acc-1">
-                  2021년 설 연휴 현대카드 Space의 휴관을 안내드리오니 이용에 참고 부탁드립니다.
-                  <br>
-                  <br>
-                  · 휴관 기간 : 2021. 02. 11(목) ~ 02. 13(토) 
-                  <br>
-                  · 대상 공간 : 모든 현대카드 Space 
-                  <br>
-                  (DESIGN/TRAVEL/MUSIC/COOKING LIBRARY, UNDERSTAGE, VINYL &amp; PLASTIC, STORAGE)  
-                
                 </div>
-              </li>
-              <li class="m-notice-acc">
-                <a href="">
-                  <h3>1월 28일 행사에 따른 단축 운영 안내드립니다.</h3>
-                  <span class="notice-lib">Music Library</span>
-                  <span>2021.01.22</span>
-                </a>
-                <div class="m-acc-menu" data-acc="acc-2">
-                  2021. 1. 28 (목) 행사 진행으로 현대카드 뮤직 라이브러리의 운영시간이 단축되오니 양해 부탁 드립니다. 
-                  <br>
-                  <br>
-                  - 운영 시간 : 오후 12시 ~ 오후 3시
+                <div class="post-box">
+                  <a href="">
+                    <div class="img-box"><img src="./img/main/post02.jpg" alt=""></div>
+                    <div class="text-wrap">
+                      <h5>스타일</h5>
+                      <h3>존 레논의 메이페어</h3>
+                      <h4>박지호의 '요즘 아이템'</h4>
+                    </div>
+                  </a>
                 </div>
-              </li>
-              <li class="m-notice-acc">
-                <a href="">
-                  <h3>라이브러리 Complete Collection 열람 제한 안내 드립니다.</h3>
-                  <span class="notice-lib">Design Library</span>
-                  <span>2021.12.24</span>
-                </a>
-                <div class="m-acc-menu" data-acc="acc-3">
-                  현대카드 라이브러리 전권 보유 컬렉션 열람이 제한 되오니 이용에 참고해주시기 바라며, 이 외 문의 사항은 라이브러리별 대표전화를 통해 확인해 주시기 바랍니다.
-                  <br>
-                  <br>
-                  - 제한 기간 : 2020. 12. 29(화) ~ 2021. 01. 10(일)
-                  <br>
-                  - 대상 공간 : 현대카드 DESIGN/TRAVEL
-                  <br>
-                  (/MUSIC/COOKING LIBRARY)
+                <div class="post-box">
+                  <a href="">
+                    <div class="img-box"><img src="./img/main/post03.jpg" alt=""></div>
+                    <div class="text-wrap">
+                      <h5>음악</h5>
+                      <h3>실리카겔이라는 장르</h3>
+                      <h4>뮤직 라이브러리 라이브 보너스트랙 다시보기</h4>
+                    </div>
+                  </a>
                 </div>
-              </li>
-            </ul>
+                <div class="post-box">
+                  <a href="">
+                    <div class="img-box"><img src="./img/main/post04.jpg" alt=""></div>
+                    <div class="text-wrap">
+                      <h5>건축·인테리어</h5>
+                      <h3>작사가의 집</h3>
+                      <h4>그녀의 집으로 놀러 오세요 </h4>
+                    </div>
+                  </a>
+                </div>
+              </div><!-- post-wrap -->
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="section05">
+      </section>
+      <section id="section03">
+        <div class="wrap">
+          <div class="gap">
+            <div class="container">
+              <div class="section-title full-title clearfix">
+                <h2 class="title-text">Event</h2>
+                <div class="view-more clearfix">
+                  <a href="#">전체보기</a>
+                </div>
+              </div>
+              <div class="event-wrap clearfix">
+                <div class="event-box event-box01">
+                  <a href="javascript:void(0)" class="event-link">
+                    <div class="event-text">
+                      <h3>#MX부슷템: 중독됐구미</h3>
+                      <p>MX부슷툰 댓글 이벤트 #1</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="event-box event-box02">
+                  <a href="javascript:void(0)" class="event-link">
+                    <div class="event-text">
+                      <h3>#쇼미 더 부스트 (ft. MX BOOST)</h3>
+                      <p>MX BOOST 굿즈 랜덤 당첨 기회!</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section04">
+        <div class="wrap">
+          <div class="gap">
+            <div class="container clearfix">
+              <div class="section-title full-title clearfix">
+                <h2 class="title-text">Notice</h2>
+                <div class="view-more">
+                  <a href="#none">전체보기</a>
+                </div>
+              </div>
+              <ul class="notice-contents clearfix">
+                <li class="notice-item">
+                  <a href="javascript:void(0)">
+                    <h3 class="notice-title">설 연휴 기간 휴관 안내 드립니다.</h3>
+                    <p>2021년 설 연휴 현대카드 Space의 휴관을 안내드리오니 이용에 참고 부탁드립니다.</p>
+                    <span>2021.02.04</span>
+                  </a>
+                </li>
+                <li class="notice-item">
+                  <a href="javascript:void(0)">
+                    <h3 class="notice-title">1월 28일 행사에 따른 단축 운영 안내드립니다.</h3>
+                    <p>2021. 1. 28 (목) 행사 진행으로 현대카드 뮤직 라이브러리의 운영시간이 단축되오니 양해 부탁 드립니다.</p>
+                    <span>2021.01.22</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="m-notice-contents">
+                <li class="m-notice-acc">
+                  <a href="">
+                    <h3>설 연휴 기간 휴관 안내 드립니다.</h3>
+                    <span>2021.02.04</span>
+                  </a>
+                  <div class="m-acc-menu" data-acc="acc-1">
+                    2021년 설 연휴 현대카드 Space의 휴관을 안내드리오니 이용에 참고 부탁드립니다.
+                    <br>
+                    <br>
+                    · 휴관 기간 : 2021. 02. 11(목) ~ 02. 13(토)
+                    <br>
+                    · 대상 공간 : 모든 현대카드 Space
+                    <br>
+                    (DESIGN/TRAVEL/MUSIC/COOKING LIBRARY, UNDERSTAGE, VINYL &amp; PLASTIC, STORAGE)
+
+                  </div>
+                </li>
+                <li class="m-notice-acc">
+                  <a href="">
+                    <h3>1월 28일 행사에 따른 단축 운영 안내드립니다.</h3>
+                    <span class="notice-lib">Music Library</span>
+                    <span>2021.01.22</span>
+                  </a>
+                  <div class="m-acc-menu" data-acc="acc-2">
+                    2021. 1. 28 (목) 행사 진행으로 현대카드 뮤직 라이브러리의 운영시간이 단축되오니 양해 부탁 드립니다.
+                    <br>
+                    <br>
+                    - 운영 시간 : 오후 12시 ~ 오후 3시
+                  </div>
+                </li>
+                <li class="m-notice-acc">
+                  <a href="">
+                    <h3>라이브러리 Complete Collection 열람 제한 안내 드립니다.</h3>
+                    <span class="notice-lib">Design Library</span>
+                    <span>2021.12.24</span>
+                  </a>
+                  <div class="m-acc-menu" data-acc="acc-3">
+                    현대카드 라이브러리 전권 보유 컬렉션 열람이 제한 되오니 이용에 참고해주시기 바라며, 이 외 문의 사항은 라이브러리별 대표전화를 통해 확인해 주시기 바랍니다.
+                    <br>
+                    <br>
+                    - 제한 기간 : 2020. 12. 29(화) ~ 2021. 01. 10(일)
+                    <br>
+                    - 대상 공간 : 현대카드 DESIGN/TRAVEL
+                    <br>
+                    (/MUSIC/COOKING LIBRARY)
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section05">
         <div class="wrap">
           <div class="gap">
             <div class="container">
               <div class="cont-wrap">
                 <div class="app-img"></div>
-                  <p class="app-txt">취향을 업데이트하는 힙스터들의 필수 앱</p>
-                    <ul class="app-wrap clearfix">
-                      <li class="app">
-                       <a href href="#">Google Play</a>
-                       </li>
-                        <li class="google">
-                         <a href="#">App Store</a>
-                         </li>
-                      </ul>
-                  </div>
+                <h2 class="app-txt">취향을 업데이트하는 힙스터들의 필수 앱</h2>
+                <ul class="app-wrap clearfix">
+                  <li class="app">
+                    <a href="#none">Google Play</a>
+                  </li>
+                  <li class="google">
+                    <a href="#none">App Store</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-    </section>
-  </main>
-  <!--footer-->
-  <footer id="footer">
-    <button class="scroll-top-btn"></button>
-    <div class="wrap">
-      <div class="gap">
-        <div class="container">
-          <div class="cont-wrap clearfix">
-            <span class="card-img"></span>
-            <span class="content">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩</span>
-            <span class="content">대표이사 정태영</span>
-            <span class="content">사업자등록번호 213-86-15419</span>
-            <span class="copyright">&copy; HYUNDAI CARD Corp.</span>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer id="footer">
+      <button class="scroll-top-btn"></button>
+      <div class="wrap">
+        <div class="gap">
+          <div class="container">
+            <div class="cont-wrap clearfix">
+              <span class="card-img"></span>
+              <span class="content">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩</span>
+              <span class="content">대표이사 정태영</span>
+              <span class="content">사업자등록번호 213-86-15419</span>
+              <span class="copyright">&copy; HYUNDAI CARD Corp.</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </div>
   <!--main script-->
   <script src="./js/main.js"></script>
 </body>
+
 </html>
