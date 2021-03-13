@@ -900,6 +900,7 @@
   width: 100%;
   height: 100%;
   margin: 64px 0 0;
+  padding-bottom: 120px;
   overflow: scroll;
   /* -webkit-scrollbar : display : none; */
 }
@@ -935,7 +936,8 @@
 
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box::after {
   position: absolute;
-  top: 10px;
+  /* top: 10px; */
+  top: 0;
   left: 0;
   width: 6px;
   height: 6px;
@@ -951,9 +953,19 @@
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap {
   float: left;
   width: 410px;
+  margin-top: -22px;
   padding: 0 12px 0 45px;
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 3.4rem;
+}
+
+#main #section01 .wrap .gap .container .section01-col01 .img-wrap a:nth-child(1) .img-box .left-wrap h2,
+#main #section01 .wrap .gap .container .section01-col01 .img-wrap a:nth-child(3) .img-box .left-wrap h2 {
+  padding-right: 50px;
+}
+
+#main #section01 .wrap .gap .container .section01-col01 .img-wrap a:nth-child(4) .img-box .left-wrap h2 {
+  padding-right: 80px;
 }
 
 #main #section01 .wrap .gap .container .section01-col01 .img-wrap a .img-box .left-wrap h4 {
@@ -1025,7 +1037,8 @@
   position: relative;
   display: block;
   margin: 0 auto;
-  padding: 10px 25px;
+  /* padding: 10px 25px; */
+  padding: 9px 21px;
   width: 100px;
   height: 35px;
   text-align: left;
